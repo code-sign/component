@@ -17,11 +17,10 @@ const guide = function(){
 
     uiLink.find('a').on('click', function(){
         var uiId = $(this).text();
-        
         var uiLinkHeight = uiLink.innerHeight() - 5;
         var uiIdTop =  $('#ui'+uiId).offset().top - uiLinkHeight;
 
-        // before fix
+        // before fix mode
         if(!$(this).parent().hasClass('fix')){
             uiIdTop =  $('#ui'+uiId).offset().top - uiLinkHeightOrigin - uiLinkHeight/1.4;
         }
