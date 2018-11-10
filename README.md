@@ -185,4 +185,4 @@ card
 
 
 ## Link
-[UI Component](https://code-sign.github.io/library/ui/181024_uicomponent/index.html){:target="_blank"} 
+[UI Component](https://code-sign.github.io/component/dist){:target="_blank"} 
