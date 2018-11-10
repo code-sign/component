@@ -17,42 +17,42 @@ UI Component 만들기
 
 ## History
 
-#### 10.24 start
+### 10.24 start
 parcel bundler script & dependencies setting
 
-#### 10.25 기본 UI 정의
+### 10.25 기본 UI 정의
 heading, scss color, button(shape, size, color)
 
 
-#### 10.26 ui add - input
+### 10.26 ui add - input
 input form(radio, checkbox)
 
-#### 10.27 ui add - select, custom select
+### 10.27 ui add - select, custom select
 셀렉트 기본형 및 커스텀 타입 추가
 
-#### 10.28 ui add - layer 
+### 10.28 ui add - layer 
 normal, full, dialog, scroll 
 
-#### 10.29 ui add - motion 
+### 10.29 ui add - motion 
 Micro Interaction, focus, button click 
 
-#### 10.30 ui add - tab / tweenMax 부분 적용 
+### 10.30 ui add - tab / tweenMax 부분 적용 
 케이스 추가 및 모션타입 적용
 
 
-#### 10.31 $formHeight
+### 10.31 $formHeight
 폼 높이 일괄 변경 적용되도록 수정 (인풋, 버튼) vertical center 확인
 
-#### 11.01 ui add - hover, file
+### 11.01 ui add - hover, file
 button hover, input file search
 
-#### 11.03 ui add - card & grid
+### 11.03 ui add - card & grid
 grid col2 ~ col6, card type 추가
 
-#### 11.06 ui guide edit / add prism code hilighter 
+### 11.06 ui guide edit / add prism code hilighter 
 guide 파일 수정, code view 추가, prism npm install
 
-#### 11.07 ui add - toggle / mobile js bug fixes 
+### 11.07 ui add - toggle / mobile js bug fixes 
 code hilighter를 붙이면서 토글 UI 필요 - 토글 UI 추가
 
 코드뷰가 너무 길어짐
@@ -60,7 +60,7 @@ code hilighter를 붙이면서 토글 UI 필요 - 토글 UI 추가
 모바일에서 js 멈춤 수정 위치 변경, 인풋, 라디오, 파일 위에 작성 (원인파악중)
 
 
-#### 11.08 add top navigation / select, toggle bug fixes / mixin add
+### 11.08 add top navigation / select, toggle bug fixes / mixin add
 탑 네비게이션 추가
 
 toggle close 외부영역, 다른토글 클릭시 닫기 버그 수정
@@ -70,7 +70,7 @@ toggle close 외부영역, 다른토글 클릭시 닫기 버그 수정
 반복코드 mixin 적용 include
 
 
-#### 11.09 mobile js bug fixes / css, js splitting / shadow add
+### 11.09 mobile js bug fixes / css, js splitting / shadow add
 모바일 외부영역 터치이벤트 추가
 
 코드가 길어지면서 복잡해짐 > UI 단위로 scss, js코드 분할
@@ -79,7 +79,7 @@ js분할시 window.$ require
 
 shadow 가이드 추가 및 정리
 
-#### tobe
+### tobe
 slide
 
 tab slide
@@ -93,7 +93,7 @@ table
 calendar
 
 
-#### Bug list to fix
+### Bug list to fix
 prism 주석 dev모드에선 정상 노출, build 후 안보임
 
 
@@ -177,5 +177,4 @@ tab
 toggle
 card
 ```
-
 
