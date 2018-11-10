@@ -11,6 +11,10 @@ UI Component 만들기
 
 ---
 
+## Link
+[UI Component](https://code-sign.github.io/component/dist){:target="_blank"} 
+
+
 ## History
 
 #### 10.24 start
@@ -175,5 +179,3 @@ card
 ```
 
 
-## Link
-[UI Component](https://code-sign.github.io/library/component/dist){:target="_blank"} 
