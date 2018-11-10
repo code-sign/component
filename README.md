@@ -1,16 +1,8 @@
-# component
-UI Component
-
-
 UI Component 만들기
-
-자주쓰는 UI Component 정의
 
 프로젝트 성격에 따라 주요컬러, 서브컬러, 기본 폼 높이를 설정
 
-
 ---
-
 
 ## Link
 [UI Component](https://code-sign.github.io/component/dist){:target="_blank"} 
