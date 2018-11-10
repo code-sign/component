@@ -97,35 +97,34 @@ parcel bundler script & dependencies setting
 heading, scss color, button(shape, size, color)
 
 
-### 10.26 ui add - input
+### 10.26 UI add - input
 input form(radio, checkbox)
 
-### 10.27 ui add - select, custom select
+### 10.27 UI add - select, custom select
 셀렉트 기본형 및 커스텀 타입 추가
 
-### 10.28 ui add - layer 
+### 10.28 UI add - layer 
 normal, full, dialog, scroll 
 
-### 10.29 ui add - motion 
+### 10.29 UI add - motion 
 Micro Interaction, focus, button click 
 
-### 10.30 ui add - tab / tweenMax 부분 적용 
+### 10.30 UI add - tab / tweenMax 
 케이스 추가 및 모션타입 적용
 
-
 ### 10.31 $formHeight
-폼 높이 일괄 변경 적용되도록 수정 (인풋, 버튼) vertical center 확인
+폼 높이 일괄 변경 적용되도록 수정 (input, button) vertical center 
 
-### 11.01 ui add - hover, file
+### 11.01 UI add - hover, file
 button hover, input file search
 
-### 11.03 ui add - card & grid
-grid col2 ~ col6, card type 추가
+### 11.03 UI add - card & grid
+grid col2 ~ col6, card type
 
 ### 11.06 ui guide edit / add prism code hilighter 
-guide 파일 수정, code view 추가, prism npm install
+guide 파일 수정, code view 추가, prism dependency install
 
-### 11.07 ui add - toggle / mobile js bug fixes 
+### 11.07 UI add - toggle / mobile js bug fixes 
 code hilighter를 붙이면서 토글 UI 필요 - 토글 UI 추가
 
 코드뷰가 너무 길어짐
