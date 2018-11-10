@@ -1,0 +1,96 @@
+/****************************/
+/* toggle                    */
+/****************************/
+.toggle{
+    a{
+        display:table;
+        width:100%;
+        height:$formHeight;
+        padding:0 1rem;
+        span{
+            display:table-cell;
+            vertical-align: middle;
+        }
+    }
+    .tg_tit{
+        position: relative;
+        border:1px solid $gray_c;
+        border-radius:$radius;
+        color:$gray_6;
+        &:after{
+            content:'▼';
+            display:inline-block;
+            height:1rem;
+            font-size:.8rem;
+            color:$gray_b;
+            @include posCenter(0,1rem,0,inherit);
+        }
+        &.on{
+            border-radius:$radius $radius 0 0;
+            border-bottom:1px solid $gray_f;
+            &:after{
+                content:'▲';
+            }
+        }
+    }
+    .tg_cont{
+        display:none;
+        padding:1rem;
+        border:1px solid $gray_c;
+        border-top:none;
+        border-radius:0 0 $radius $radius;
+        overflow: hidden;
+    }
+    &.color{
+        .tg_tit{
+            border-color:$mainColor;
+            color:$mainColor;
+            &:after{
+                color:$mainColor;
+            }
+        }
+        .tg_cont{
+            border-color:$mainColor;
+            background-color: #fff;
+        }
+    }
+    &.fullcolor{
+        .tg_tit{
+            border-color:$mainColor;
+            background-color:$mainColor;
+            color:#fff;
+            &:after{
+                color:#fff;
+            }
+            &:hover{
+                background-color:$darkColor;
+            }
+        }
+        .tg_cont{
+            border-color:$mainColor;
+            background-color: #fff;
+        }        
+    }
+    &.code{
+        a{
+            height:$formHeight - 5;
+        }
+        .tg_tit{
+            border:0;
+            background-color:$gray_custom;
+            color:$gray_a;
+            transition:$speed;
+            &:after{
+                color:$gray_c;
+            }
+            &.on{
+                background-color: darken($gray_custom, 3%);
+                color:darken($gray_custom, 30%);
+            }
+        }
+        .tg_cont{
+            border:0;
+            padding:0;
+        }
+    }
+}

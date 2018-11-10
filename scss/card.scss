@@ -1,0 +1,41 @@
+/****************************/
+/* card                     */
+/****************************/
+.card{
+    display: flex;
+    flex-direction:column;
+    box-shadow:$shadowBasic2;
+    border-radius:$radius;
+    padding:1.562rem;
+    margin-bottom:1rem;
+    overflow: hidden;
+    .cd_top{
+        margin-bottom:.625rem;
+        font-weight: bold;
+        font-size:1.25rem;
+    }
+    .cd_bot{
+        font-size:.875rem;
+    }
+
+    &.fullcolor{
+        background-color: $mainColor;
+        *{
+            color:#fff;
+        }
+    }
+
+    &.topcolor{
+        padding:0;
+        > div{
+            padding:1.25rem;
+        }
+        .cd_top{
+            padding:1rem 1.25rem;
+            margin-bottom:0;
+            background-color:$mainColor;
+            color:#fff;
+        }
+    }
+
+}

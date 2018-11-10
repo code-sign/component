@@ -1,0 +1,84 @@
+/****************************/
+/* layer                    */
+/****************************/
+.layer_wrap{
+    position: relative;
+    display:none;
+
+    .dim{
+        position:fixed;
+        z-index:10;
+        background-color:rgba(0,0,0,.4);
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+    }
+    .layer_box{
+        z-index:20;
+        padding:30px;
+        display:inline-block;
+        width:80%;
+        height:300px;
+        background-color: #fff;
+        border-radius: $radius;
+        box-shadow:$shadowBasic1;
+        @include posCenter(0,0,0,0,fixed);
+
+        .pop_head{
+            height:40px;
+            padding-bottom:20px;
+            font-weight: bold;
+            font-size:1.3rem;
+        }
+        .inner{
+            height:calc(100% - 40px);
+            overflow-y:auto;
+        }
+
+        .close {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right:20px;
+            z-index: 99999;
+            border-radius:50%;
+
+            &:after{
+                content:'';
+                width:20px;
+                height:2px;
+                background-color: $gray_6;
+                position: absolute;
+                top:18px;
+                left:9px;
+                transform:rotate(45deg);
+            }
+            &:before{
+                content:'';
+                width:20px;
+                height:2px;
+                background-color: $gray_6;
+                position: absolute;
+                top:18px;
+                left:9px;
+                transform:rotate(-45deg);
+            }  
+        }
+    }
+    &.dialog{
+        .layer_box{
+            width:60%;
+            max-width:400px;
+            height:220px;
+        }
+    }
+    &.full{
+        .layer_box{
+            width:100%;
+            max-width:100%;
+            height:100%;
+        }
+    }
+}

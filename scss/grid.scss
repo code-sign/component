@@ -1,0 +1,38 @@
+
+/****************************/
+/* grid                     */
+/****************************/
+$gutter : 1rem;
+
+.colbox{
+    display: flex;
+    flex-wrap:wrap;
+    > div{
+        margin: $gutter/2;
+        &:first-child{
+            margin-left:0;
+        }
+        &:last-child{
+            margin-right:0;
+        }
+    }
+    &.col2 > div{
+        width:calc(50% - #{$gutter/2});
+    }
+    &.col3 > div{
+        width:calc(33.333% - #{$gutter/1.49});
+    }
+    &.col4 > div{
+        width:calc(25% - #{$gutter/1.33});
+    }
+    &.col5 > div{
+        width:calc(20% - #{$gutter/1.25});
+    }
+    &.col6 > div{
+        width:calc(16.66% - #{$gutter/1});
+    }
+    > .colbox {
+        margin-top:0;
+        margin-bottom:0;
+    }
+}
