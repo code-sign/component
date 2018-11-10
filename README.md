@@ -15,6 +15,86 @@ UI Component 만들기
 [UI Component](https://code-sign.github.io/component/dist){:target="_blank"} 
 
 
+## Guide
+
+### npm 
+```
+npm i               // dev dependencies install
+npm run dev         // dev run server
+npm run build       // build with parcel bundler
+```
+
+
+### Project Ui Guide Settings / style.scss
+```scss
+/* project main color setting */
+$mainColor  : Main color 
+$lightColor : Sub color / light / Used for hover or active
+$darkColor  : Sub color / dark / Used for hover or active
+```
+
+
+### Text & Form
+```scss
+$textColor  : Text default color
+$formColor  : Form text default color
+$formHeight : Form height (input, select, button ... )
+```
+
+
+### Radius & Speed
+```scss
+$radius : border-radius (input, button, select ...)
+$speed  : motion transition speed
+```
+
+
+### Example Settings
+```scss
+/* project main color */
+$mainColor  : lightsteelblue;
+$lightColor : lighten($mainColor, 19%);
+$darkColor  : darken($mainColor, 7%);
+
+/* gray set */
+$gray_2 : #222;
+$gray_3 : #333;
+$gray_4 : #444;
+$gray_5 : #555;
+$gray_6 : #666;
+$gray_7 : #777;
+$gray_a : #aaa;
+$gray_b : #bbb;
+$gray_c : #ccc;
+$gray_d : #ddd;
+$gray_e : #eee;
+$gray_f : #f5f5f5;
+$gray_custom : #f6f8fa;
+
+/* Text & Form */
+$textColor : $gray_2;
+$formColor : $gray_7;
+$formHeight : 50px;
+
+/* Radius & Speed */
+$radius : 4px;
+$speed : .3s;
+```
+
+
+## UI Component
+```
+button
+forms (Input, Radio, Checkbox, Selectbox)
+layer
+motion
+tab
+toggle
+card
+```
+
+
+
 ## History
 
 ### 10.24 start
@@ -95,86 +175,3 @@ calendar
 
 ### Bug list to fix
 prism 주석 dev모드에선 정상 노출, build 후 안보임
-
-
-
-
-
-## Guide
-
-### npm 
-```
-npm i               // dev dependencies install
-npm run dev         // dev run server
-npm run build       // build with parcel bundler
-```
-
-
-### Project Ui Guide Settings / style.scss
-```scss
-/* project main color setting */
-$mainColor  : Main color 
-$lightColor : Sub color / light / Used for hover or active
-$darkColor  : Sub color / dark / Used for hover or active
-```
-
-
-### Text & Form
-```scss
-$textColor  : Text default color
-$formColor  : Form text default color
-$formHeight : Form height (input, select, button ... )
-```
-
-
-### Radius & Speed
-```scss
-$radius : border-radius (input, button, select ...)
-$speed  : motion transition speed
-```
-
-
-### Example Settings
-```scss
-/* project main color */
-$mainColor  : lightsteelblue;
-$lightColor : lighten($mainColor, 19%);
-$darkColor  : darken($mainColor, 7%);
-
-/* gray set */
-$gray_2 : #222;
-$gray_3 : #333;
-$gray_4 : #444;
-$gray_5 : #555;
-$gray_6 : #666;
-$gray_7 : #777;
-$gray_a : #aaa;
-$gray_b : #bbb;
-$gray_c : #ccc;
-$gray_d : #ddd;
-$gray_e : #eee;
-$gray_f : #f5f5f5;
-$gray_custom : #f6f8fa;
-
-/* Text & Form */
-$textColor : $gray_2;
-$formColor : $gray_7;
-$formHeight : 50px;
-
-/* Radius & Speed */
-$radius : 4px;
-$speed : .3s;
-```
-
-
-## UI Component
-```
-button
-forms (Input, Radio, Checkbox, Selectbox)
-layer
-motion
-tab
-toggle
-card
-```
-
