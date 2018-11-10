@@ -11,7 +11,7 @@ const layer = function(){
         var layerBox = layer.find('.layer_box');
         var layerDim = layer.find('.dim');
 
-        // scrollBar check
+        // ScrollBar check - Prevent screen shake
         var body = $('body');
         var outerWidth = $(window).outerWidth();
         var innerWidth = $(window).innerWidth();
