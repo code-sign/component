@@ -39,10 +39,8 @@ Prism.highlightAll();
 
 
 
-// 밑에 적으면 모바일에서 js 꼬임 왜그런것인가 
+// 밑에 적으면 모바일에서 js 꼬임 왜그런것인가, PC는 정상작동
 // 아래 코드에 버그가 있는것 같다
-// PC는 잘됨
-
 
 import form from './form';
 form();
