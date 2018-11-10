@@ -6,7 +6,7 @@ window.$ = require('jquery');
 
 
 /****************************/
-/* UI                       */
+/* UI Component             */
 /****************************/
 import select from './select';
 select();
