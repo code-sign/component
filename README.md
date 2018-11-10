@@ -6,10 +6,11 @@ UI Component 만들기
 
 자주쓰는 UI Component 정의
 
-프로젝트 성격에 따른 주요컬러, 서브컬러, 기본 폼 높이를 설정
+프로젝트 성격에 따라 주요컬러, 서브컬러, 기본 폼 높이를 설정
 
 
 ---
+
 
 ## Link
 [UI Component](https://code-sign.github.io/component/dist){:target="_blank"} 
@@ -175,3 +176,5 @@ calendar
 
 ### Bug list to fix
 prism 주석 dev모드에선 정상 노출, build 후 안보임
+
+
