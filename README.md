@@ -88,14 +88,12 @@ table
 
 calendar
 
----
 
 #### Bug list to fix
 prism 주석 dev모드에선 정상 노출, build 후 안보임
 
 
 
----
 
 
 ## Guide
@@ -107,7 +105,6 @@ npm run dev         // dev run server
 npm run build       // build with parcel bundler
 ```
 
----
 
 ### Project Ui Guide Settings / style.scss
 ```scss
@@ -117,7 +114,6 @@ $lightColor : Sub color / light / Used for hover or active
 $darkColor  : Sub color / dark / Used for hover or active
 ```
 
----
 
 ### Text & Form
 ```scss
@@ -126,7 +122,6 @@ $formColor  : Form text default color
 $formHeight : Form height (input, select, button ... )
 ```
 
----
 
 ### Radius & Speed
 ```scss
@@ -134,7 +129,6 @@ $radius : border-radius (input, button, select ...)
 $speed  : motion transition speed
 ```
 
----
 
 ### Example Settings
 ```scss
@@ -168,7 +162,6 @@ $radius : 4px;
 $speed : .3s;
 ```
 
----
 
 ## UI Component
 ```
@@ -181,8 +174,6 @@ toggle
 card
 ```
 
----
-
 
 ## Link
-[UI Component](https://code-sign.github.io/component/dist){:target="_blank"} 
+[UI Component](https://code-sign.github.io/library/component/dist){:target="_blank"} 
