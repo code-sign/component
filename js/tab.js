@@ -10,7 +10,7 @@ const tab = function(){
         var tabCont = _this.find('.tab_cont > .tcon');
         var line = _this.find('.line');
 
-        // resize line Width reset
+        // Resize line Width reset
         $(window).on('resize', function(){
             tabHeadWid = tabHead.innerWidth();
             line.css({width:tabHeadWid});

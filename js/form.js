@@ -28,7 +28,7 @@ const form = function(){
 
 
     /****************************/
-    /* Input - File             */
+    /* Input - File search      */
     /****************************/
     $('.file').each(function(){
         var inputFile =  $(this).find('input[type=file]');
