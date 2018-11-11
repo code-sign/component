@@ -9,6 +9,7 @@ const tab = function(){
         var tabHeadWid = tabHead.innerWidth();
         var tabCont = _this.find('.tab_cont > .tcon');
         var line = _this.find('.line');
+        var conPosX = $('#container').offset().left + 1; //alignment 
 
         // Resize line Width reset
         $(window).on('resize', function(){
@@ -32,18 +33,18 @@ const tab = function(){
             line.css({width:tabHeadWid});
             tabHead.on('click', function(){
                 var thisA = $(this);
-                var thisXpos = thisA.offset().left;
+                var thisXpos = thisA.offset().left - conPosX;
                 tabHeadWid = thisA.innerWidth();
 
                 line.css({width:tabHeadWid});
-                // line.stop().animate({left:thisXpos - 30});
                 TweenMax.to(line,.4,{left:thisXpos - 30});
             });
 
-            // resize xPos reset
+            // Resize xPos reset
             $(window).on('resize', function(){
+                conPosX = $('#container').offset().left; //first container posX check
                 var activeA = _this.find('.on');
-                var thisXpos = activeA.offset().left;
+                var thisXpos = activeA.offset().left - conPosX;
                 tabHeadWid = activeA.innerWidth();
                 line.css({width:tabHeadWid+1,left:thisXpos - 30});
             });
