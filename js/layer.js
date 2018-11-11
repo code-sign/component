@@ -6,7 +6,7 @@ const layer = function(){
 
     $('button').on('click', function(){
         var _button = $(this);
-        var layerId = _button.attr('layerId');
+        var layerId = _button.attr('data-layerid');
         var layer = $('#'+layerId);
         var layerBox = layer.find('.layer_box');
         var layerDim = layer.find('.dim');
