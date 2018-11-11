@@ -151,6 +151,9 @@ js분할시 window.$ require
 
 shadow 가이드 추가 및 정리
 
+### 11.11 guide max-width add / tab move bug fixes
+max-width 추가하면서 offset().left 값 에러, 컨테이너 기준 left minus
+
 ### tobe
 ~~toggle~~
 
