@@ -21,7 +21,7 @@ const guide = function(){
         var uiIdTop =  $('#ui'+uiId).offset().top - uiLinkHeight;
 
         // before fix mode
-        if(!$(this).parent().hasClass('fix')){
+        if(!$(this).parents().hasClass('fix')){
             uiIdTop =  $('#ui'+uiId).offset().top - uiLinkHeightOrigin - uiLinkHeight/1.4;
         }
 
