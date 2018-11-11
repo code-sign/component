@@ -39,15 +39,15 @@ button{
     &.round{
         border-radius:30px;
     }
-    &.s{
+    &.size_s{
         min-height: $formHeight - 15;
         padding:$formHeight/10 $formHeight/3;
         font-size:0.813rem;
     }
-    &.m{
+    &.size_m{
         padding:$formHeight/10 $formHeight/2;
     }
-    &.l{
+    &.size_l{
         min-height: $formHeight + 15;
         padding:$formHeight/5 $formHeight;
         font-size:1.25rem;
@@ -59,10 +59,10 @@ button{
     padding-top:0 !important;
     padding-bottom:0 !important;
     line-height:$formHeight - 2;
-    &.s{
+    &.size_s{
         line-height: $formHeight - 15 - 2;
     }
-    &.l{
+    &.size_l{
         line-height: $formHeight + 15 - 2;
     }
 }
