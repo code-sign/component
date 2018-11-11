@@ -352,7 +352,7 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-},{}],29:[function(require,module,exports) {
+},{}],27:[function(require,module,exports) {
 var global = arguments[3];
 var process = require("process");
 var define;
@@ -19472,7 +19472,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 /****************************/
-/* Select                   */
+/* Selectbox                */
 /****************************/
 
 var select = function select() {
@@ -19542,14 +19542,14 @@ Object.defineProperty(exports, "__esModule", {
 /* Toggle                   */
 /****************************/
 /*  
-    * 기본토글
+    1.기본토글
     다른 토글 클릭시 열려진 토글 닫음
     외부 영역 클릭시 열려진 토글 닫음
 
-    * 모션토글 .motion
+    2.모션토글 .motion
     토글컨텐츠 영역 슬라이드 모션
 
-    * 오픈토글 .open
+    3.오픈토글 .open
     열려져 있는 토글 / 본인을 다시 토글해야 닫음
     다른 토글 & 외부 영역을 클릭해도 닫지 않음
 */
@@ -19622,7 +19622,7 @@ var layer = function layer() {
 
     $('button').on('click', function () {
         var _button = $(this);
-        var layerId = _button.attr('layerId');
+        var layerId = _button.attr('data-layerid');
         var layer = $('#' + layerId);
         var layerBox = layer.find('.layer_box');
         var layerDim = layer.find('.dim');
@@ -19721,7 +19721,7 @@ var tab = function tab() {
         var tabCont = _this.find('.tab_cont > .tcon');
         var line = _this.find('.line');
 
-        // resize line Width reset
+        // Resize line Width reset
         $(window).on('resize', function () {
             tabHeadWid = tabHead.innerWidth();
             line.css({ width: tabHeadWid });
@@ -19893,7 +19893,7 @@ var guide = function guide() {
 };
 
 exports.default = guide;
-},{}],27:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 var global = arguments[3];
 
 /* **********************************************
@@ -20805,7 +20805,7 @@ var form = function form() {
     }
 
     /****************************/
-    /* Input - File             */
+    /* Input - File search      */
     /****************************/
     $('.file').each(function () {
         var inputFile = $(this).find('input[type=file]');
@@ -20897,7 +20897,7 @@ _prismjs2.default.highlightAll();
 // 아래 코드에 버그가 있는것 같다
 
 (0, _form2.default)();
-},{"../scss/main.scss":11,"jquery":29,"gsap/TweenMax":31,"./select":13,"./toggle":15,"./layer":17,"./tab":19,"./motion":21,"./guide":23,"prismjs":27,"./form":25}],62:[function(require,module,exports) {
+},{"../scss/main.scss":11,"jquery":27,"gsap/TweenMax":31,"./select":13,"./toggle":15,"./layer":17,"./tab":19,"./motion":21,"./guide":23,"prismjs":29,"./form":25}],65:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -20926,7 +20926,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51994' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53571' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -21067,5 +21067,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[62,7], null)
+},{}]},{},[65,7], null)
 //# sourceMappingURL=/js.b9ecfed0.map
