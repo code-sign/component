@@ -10,6 +10,41 @@ UI Component 만들기
 
 ## Guide
 
+### Folder structure
+```
+Component
+  index.html
+  ├─ js
+  │  ├─ index.js
+  │  ├─ form.js
+  │  ├─ select.js
+  │  ├─ toggle.js
+  │  ├─ layer.js
+  │  ├─ tab.js
+  │  ├─ motion.js
+  │  └─ guide.js  
+  ├─ scss
+  │  ├─ main.scss
+  │  ├─ reset.scss
+  │  ├─ style.scss
+  │  ├─ guide.scss
+  │  ├─ common.scss
+  │  ├─ form.scss
+  │  ├─ layer.scss
+  │  ├─ motion.scss
+  │  ├─ grid.scss
+  │  ├─ card.scss
+  │  ├─ toggle.scss
+  │  ├─ tab.scss
+  │  ├─ mediaquery.scss
+  │  └─ mediaquery_guide.scss
+  ├─ dist
+  │  ├─ index.html
+  │  ├─ build.css
+  │  └─ build.js
+  └─ package.json
+```
+
 ### npm 
 ```
 npm i               // dev dependencies install
