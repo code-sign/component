@@ -180,7 +180,7 @@ toggle close 외부영역, 다른토글 클릭시 닫기 버그 수정
 ### 11.09 mobile js bug fixes / css, js splitting / shadow add
 모바일 외부영역 터치이벤트 추가
 
-코드가 길어지면서 복잡해짐 > UI 단위로 scss, js코드 분할
+코드가 길어지면서 복잡해짐 > UI 단위로 scss, js코드 분할 > 컴포넌트화
 
 js분할시 window.$ require
 
