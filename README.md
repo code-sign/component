@@ -194,9 +194,7 @@ max-width 추가하면서 offset().left 값 에러, 컨테이너 기준 left min
 ### tobe
 ~~toggle~~
 
-slide
-
-tab slide
+slide & tab slide (ing)
 
 list
 
