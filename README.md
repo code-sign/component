@@ -189,7 +189,7 @@ shadow 가이드 추가 및 정리
 ### 11.11 guide max-width add / tab move bug fixes
 max-width 추가하면서 offset().left 값 에러, 컨테이너 기준 left minus
 
-버튼 가이드 정의 수정
+버튼 가이드 수정
 
 ### tobe
 ~~toggle~~
