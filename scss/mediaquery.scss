@@ -12,11 +12,15 @@
         {
             width:calc(50% - #{$gutter/2});
         }
-        > div:nth-child(odd){
-            margin-left:0;
-        }
-        > div:nth-child(even){
-            margin-right:0;
+        > div{
+            margin: $gutter/2 !important;
+
+            &:nth-child(odd){
+                margin-left:0 !important;
+            }
+            &:nth-child(even){
+                margin-right:0 !important;
+            }
         }
     }
 }
@@ -46,7 +50,7 @@
         &.col5 > div,
         &.col6 > div {
             width:100%;
-            margin:0 0 $gutter 0;
+            margin:0 0 $gutter 0 !important;
         }
     }
 
