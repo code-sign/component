@@ -1,0 +1,82 @@
+
+/****************************/
+/* Common Style             */
+/****************************/
+*{
+    box-sizing:border-box;
+}
+body{
+    font-size:1rem;
+}
+body, input, select, div, textarea, table, button {
+    color:$textColor;
+}
+
+input[type=text], input[type=password], label, button, select, .select_custom .default {
+    color:$formColor;
+}
+
+#container{
+    position: relative;
+    padding: 30px;
+}
+
+section{
+    padding-top:40px;
+    margin-bottom:60px;
+    border-top:1px solid $gray_c;
+}
+
+hr{
+    margin:5px 0;
+    border:0;
+}
+
+.codeview{
+    margin-bottom:40px;
+}
+
+.alC{
+    text-align:center !important;
+}
+
+.ml_20{margin-left:20px;}
+
+
+
+/****************************/
+/* heading                  */
+/****************************/
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
+
+h1{
+    // 45px
+    font-size:2.8125rem;
+}
+
+h2{
+    // 36px
+    font-size:2.25rem;
+}
+
+h3{
+    // 26px
+    font-size:1.625rem;
+}
+
+h4{
+    // 20px
+    font-size:1.25rem;
+}
+
+h5{
+    // 18px
+    font-size:1.125rem;
+}
+
+h6{
+    // 16px
+    font-size:1rem;
+}

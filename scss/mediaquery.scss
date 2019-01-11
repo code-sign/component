@@ -1,0 +1,57 @@
+
+
+/****************************/
+/* media                    */
+/****************************/
+@media (max-width:768px) {
+    .colbox{
+        &.col3 > div,
+        &.col4 > div,
+        &.col5 > div,
+        &.col6 > div
+        {
+            width:calc(50% - #{$gutter/2});
+        }
+        > div{
+            margin: $gutter/2 !important;
+
+            &:nth-child(odd){
+                margin-left:0 !important;
+            }
+            &:nth-child(even){
+                margin-right:0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    html{
+        font-size:90%;
+        transition:$speed;
+    }
+    .layer_wrap{
+        .layer_box{
+            width:90%;
+            max-width:90%;
+        }
+        &.dialog{
+            .layer_box{
+                width:90%;
+                max-width:90%;
+            }
+        } 
+    }
+
+    .colbox{
+        &.col2 > div,
+        &.col3 > div,
+        &.col4 > div,
+        &.col5 > div,
+        &.col6 > div {
+            width:100%;
+            margin:0 0 $gutter 0 !important;
+        }
+    }
+
+}

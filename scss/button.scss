@@ -1,0 +1,72 @@
+/****************************/
+/* button                   */
+/****************************/
+button{
+    position: relative;
+    display:inline-block;
+    padding:$formHeight/10 $formHeight/2;
+    min-height:$formHeight;
+    border-radius:$radius;
+    background: $gray_e;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $gray_d;
+        transition:$speed;
+    }
+    &.color{
+        background-color: $mainColor;
+        color:#fff;
+        &:hover{
+            background-color: $darkColor;
+        }
+    }
+    &.border{
+        border:1px solid $gray_c;
+        background-color: transparent;
+        &.color{
+            color:$mainColor;
+            background-color: transparent;
+            border-color:$mainColor; 
+        }
+        &:hover{
+            background-color: $lightColor;
+            border-color:$darkColor; 
+            color:$darkColor;
+        }
+    }
+    &.round{
+        border-radius:30px;
+    }
+    &.size_s{
+        min-height: $formHeight - 15;
+        padding:$formHeight/10 $formHeight/3;
+        font-size:0.813rem;
+    }
+    &.size_m{
+        padding:$formHeight/10 $formHeight/2;
+    }
+    &.size_l{
+        min-height: $formHeight + 15;
+        padding:$formHeight/5 $formHeight;
+        font-size:1.25rem;
+    }
+}
+
+.btn{
+    @extend button;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    line-height:$formHeight - 2;
+    &.size_s{
+        line-height: $formHeight - 15 - 2;
+    }
+    &.size_l{
+        line-height: $formHeight + 15 - 2;
+    }
+}
+
+.btn_wrap{
+    text-align:center;
+}
