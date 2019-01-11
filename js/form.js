@@ -25,7 +25,7 @@ const form = function(){
             ipGroup.removeClass('focus');
         });
     }
-
+ 
 
     /****************************/
     /* Input - File search      */
